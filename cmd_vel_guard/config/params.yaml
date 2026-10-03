@@ -1,0 +1,16 @@
+cmd_vel_filter:
+  ros__parameters:
+    max_linear_speed: 1.0     # m/s
+    max_angular_speed: 1.5    # rad/s
+    max_linear_accel: 1.0     # m/s^2
+    max_angular_accel: 3.0    # rad/s^2
+    timeout: 0.5              # s，超过此时间无有效输入则刹停
+    allow_lateral: true       # 全向底盘允许横移
+    publish_rate: 50.0        # Hz
+
+robot_state_monitor:
+  ros__parameters:
+    idle_linear_threshold: 0.01
+    idle_angular_threshold: 0.01
+    input_timeout: 0.5        # s，超过此时间无 /cmd_vel_safe 则判定 FILTER_LOST
+    state_rate: 10.0          # Hz
