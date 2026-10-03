@@ -160,10 +160,10 @@ ros2 topic echo /robot_status
 19 s    MOVING  → TURNING     超速段（已限速），伴随 CLAMPED 事件
 22 s                          INVALID ×2（NaN、inf）
 24 s    TURNING → MOVING      横向移动
-28.4 s  MOVING  → TIMEOUT     输入中断，刹停
+28.3 s  MOVING  → TIMEOUT     输入中断，刹停
 32 s    TIMEOUT → MOVING      数据恢复
 35.5 s  MOVING  → IDLE        指令归零，停车
-36.4 s  IDLE    → TIMEOUT     bag 结束，无输入
+36.3 s  IDLE    → TIMEOUT     bag 结束，无输入
 ```
 
 
