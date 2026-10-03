@@ -120,7 +120,7 @@ state=MOVING v=0.30,0.40 w=0.00 pose=(5.12,1.03,0.42) dist=7.85 invalid=2 clampe
 ```bash
 # 1. 克隆到工作空间的 src 目录下
 cd ~/ros2_ws/src
-git clone https://github.com/【用户名】/103.git
+git clone https://github.com/fengshihao39/103.git
 
 # 2. 编译
 cd ~/ros2_ws
@@ -166,7 +166,7 @@ ros2 topic echo /robot_status
 36.4 s  IDLE    → TIMEOUT     bag 结束，无输入
 ```
 
-录屏：【录屏链接】
+
 
 > 终端日志使用 `RCLCPP_WARN_THROTTLE` 限制为每秒最多一条，完整事件以 `/cmd_vel_events` topic 为准。
 
